@@ -1,0 +1,141 @@
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  background-color: seashell;
+}
+
+.container{
+  color: seashell;
+  background-color: #000;
+  opacity: 0.9;
+  text-align: center;
+  width: 1280px;
+  margin: 0px auto;
+}
+
+.header{
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  top: 0px;
+  width: 1280px;
+  display: flex;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 10;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+    .header-left{
+      flex-basis: 65%;
+      text-align: left;
+    }
+
+    .header-right{
+      flex-basis: 35%;
+      line-height: 50px;
+    }
+
+    .header-left img{
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    nav a{
+      color: seashell;
+      padding: 15px;
+    }
+
+.banner{
+  width: 1200px;
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin: 0px auto;
+  margin-top: 69px;
+  padding-top: 400px;
+}
+
+    .banner-text{
+      background-color: #000;
+      opacity: 0.9;
+      padding: 2px 0px;
+    }
+.feature{
+  width: 1000px;
+  margin: 0px auto;
+}
+
+    .feature-text{
+      padding-top: 60px;
+    }
+
+    .feature-content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature-content img{
+      width: 300px;
+      height: 200px;
+    }
+
+    .feature-container{
+      margin: 15px 10px;
+    }
+
+.locations{
+  width: 1200px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px;
+}
+
+    .location-content{
+      display:flex;
+      justify-content: center;
+    }
+
+    .location-container{
+      width: 300px;
+      background-color: #000;
+      margin: 15px 20px;
+    }
+
+        .location-container ul{
+          padding: 0px;
+        }
+
+        .location-container ul li{
+          list-style: none;
+          padding: 10px;
+          margin-bottom: 15px;
+        }
+.contact{
+  height: 200px;
+}
+
+.footer{
+  text-align: left;
+}
+
+    .footer p{
+      margin: 15px 20px;
+      height: 45px;
+    }
+
+#copyright{
+  font-size: 16px;
+  color: seashell;
+}
