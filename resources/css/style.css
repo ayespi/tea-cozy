@@ -1,141 +1,149 @@
-body{
+html, body{
   font-family: Helvetica, Arial, sans-serif;
   font-size: 22px;
-  background-color: seashell;
-}
-
-.container{
-  color: seashell;
+  color: seaShell;
   background-color: #000;
   opacity: 0.9;
   text-align: center;
-  width: 1280px;
-  margin: 0px auto;
 }
 
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+
+ul li{
+  list-style: none;
+}
+
+/* Header Styles */
+
 .header{
-  height: 69px;
-  border-bottom: 1px solid seashell;
-  position: fixed;
-  top: 0px;
-  width: 1280px;
   display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid seaShell;
+  height: 69px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #000;
   opacity: 0.9;
   z-index: 10;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
 }
 
-    .header-left{
-      flex-basis: 65%;
-      text-align: left;
-    }
-
-    .header-right{
-      flex-basis: 35%;
-      line-height: 50px;
-    }
-
-    .header-left img{
+    .header img{
+      margin: 10px 0 0 10px;
       height: 50px;
-      margin-top: 10px;
+      width: auto;
     }
 
-    nav a{
-      color: seashell;
-      padding: 15px;
+    .header nav{
+      margin-right: 20px;
     }
 
+    .header nav ul li{
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .header nav ul li span{
+      text-decoration: underline;
+    }
+/* Banner Styles */
 .banner{
-  width: 1200px;
-  height: 700px;
-  background-image: url("../images/img-mission-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  margin: 0px auto;
-  margin-top: 69px;
-  padding-top: 400px;
+  margin-bottom: 75px;
 }
-
-    .banner-text{
-      background-color: #000;
-      opacity: 0.9;
-      padding: 2px 0px;
+    .banner-content{
+      width: 1200px;
+      height: 700px;
+      margin: 0 auto;
+      background-image: url("../images/img-mission-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: 400px;
     }
-.feature{
+
+        .banner-text{
+          background-color: #000;
+          opacity: 0.9;
+          padding: 10px 0;
+        }
+
+        .banner-text h2{
+          margin: 5px 0;
+        }
+
+        .banner-text h4{
+          margin: 5px 0;
+        }
+/* Featured Styles */
+
+.featured{
   width: 1000px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-    .feature-text{
-      padding-top: 60px;
-    }
-
-    .feature-content{
+    .features{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    .feature-content img{
+    .featured-content img{
       width: 300px;
       height: 200px;
+      margin: 0 15px;
     }
 
-    .feature-container{
-      margin: 15px 10px;
+    .featured-content h4{
+      margin-top: 10px;
     }
+/* Locations Styles */
 
 .locations{
   width: 1200px;
   height: 500px;
+  margin: 0 auto;
   background-image: url("../images/img-locations-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 0px;
+  background-position: center;
+  padding-top: 30px;
 }
 
-    .location-content{
-      display:flex;
+    .locations h2{
+      margin-bottom: 0;
+    }
+
+    .locations-content{
+      display: flex;
       justify-content: center;
     }
 
-    .location-container{
-      width: 300px;
-      background-color: #000;
-      margin: 15px 20px;
-    }
-
-        .location-container ul{
-          padding: 0px;
+        .location-container{
+          flex-basis: 300px;
+          text-align: center;
+          background-color: #000;
+          margin: 15px 20px;
         }
 
-        .location-container ul li{
-          list-style: none;
-          padding: 10px;
-          margin-bottom: 15px;
-        }
+            .location-container ul{
+              padding: 0;
+            }
+
+            .location-container ul li{
+              margin-bottom: 45px;
+            }
+/* Contact Styles */
+
 .contact{
   height: 200px;
 }
 
-.footer{
+/* Footer Styles */
+
+.footer p{
   text-align: left;
-}
-
-    .footer p{
-      margin: 15px 20px;
-      height: 45px;
-    }
-
-#copyright{
-  font-size: 16px;
-  color: seashell;
+  margin-left: 20px;
 }
